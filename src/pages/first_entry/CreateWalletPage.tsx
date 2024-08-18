@@ -35,7 +35,7 @@ const CreateWalletPage = () => {
 								Create new wallet
 							</button>
 						</a>
-						<a href='/loading'>
+						<a href='test-app/loading'>
 							<button title='' className='log-in'>
 								Log in
 							</button>
