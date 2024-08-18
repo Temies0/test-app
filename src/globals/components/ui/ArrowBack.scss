@@ -1,0 +1,39 @@
+@import '../../../globals/themes/dark-theme.scss';
+
+.arrow-back-container {
+	height: 40px;
+	margin-bottom: 4px;
+	.arrow-back-button {
+		height: 40px;
+		width: 40px;
+		border-radius: 100px;
+		background-color: $gs-2;
+		.arrow-back {
+			display: flex;
+			align-items: center;
+			margin: 0 auto;
+		}
+	}
+}
+
+.arrow-back-button:active .arrow-back path { fill: $gs-8; }
+
+.arrow-back-button .arrow-back path { transition: all .2s ease; }
+
+@media only screen and (hover: hover) {
+	.arrow-back-button {
+		transition: all .2s ease;
+		&:hover {
+			background-color: $gs-4;
+		}
+	}
+}
+
+@media only screen and (hover: none) {
+	.arrow-back-button {
+		transition: all .2s ease;
+		&:active {
+			background-color: $gs-4;
+		}
+	}
+}

@@ -1,0 +1,532 @@
+@import '../../../globals/themes/dark-theme';
+@import '../../../globals/fonts/fonts';
+
+body {
+	padding: 12px 1rem 0 1rem;
+	max-width: 393px;
+	margin: 0 auto;
+}
+
+.container-main {
+	padding-top: 12px;
+}
+
+.header {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.container-wallet-select {
+	background-color: $base-white;
+	height: 40px;
+	max-width: 309px;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	border-radius: 12px;
+	transition: all .2s ease-in-out;
+}
+
+.inner-wallet-container {
+	max-height: 24px;
+	display: flex;
+	align-items: center;
+	margin: 0 12px;
+	gap: 0.5rem;
+}
+
+.title-container {
+	display: flex;
+	gap: 4px;
+}
+
+.wallet-title {
+	color: $gs-1;
+	@include semibold-body-1;
+}
+
+.wallet-address {
+	color: $gs-7;
+	@include semibold-body-1;
+}
+
+.settings-button-container {
+	display: flex;
+	align-items: center;
+	max-width: 40px;
+}
+
+.settings-button {
+	height: 40px;
+	width: 40px;
+	background-color: $base-white;
+	border-radius: 12px;
+	transition: all .2s ease-in-out;
+
+	svg {
+		display: flex;
+		align-items: center;
+		margin: 8px;
+	}
+
+	&:hover svg {
+		animation: spin 2s linear infinite;
+	}
+}
+
+@media only screen and (hover: none) {
+
+	.settings-button:active,
+	.container-wallet-select:active {
+		background-color: $gs-9;
+	}
+}
+
+@media only screen and (hover: hover) {
+
+	.settings-button:hover,
+	.container-wallet-select:hover {
+		background-color: $gs-9;
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.wallet-settings-container {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.settings-button-container {
+	display: flex;
+	gap: 8px;
+	max-width: 152px;
+}
+
+.parameters-container {
+	width: 72px;
+	background-color: $gs-2;
+	height: 72px;
+	border-radius: 1rem;
+	transition: all .2s ease-in-out;
+
+	svg {
+		display: flex;
+		margin: 0 auto;
+		margin-top: 12px;
+	}
+
+	.caption {
+		display: flex;
+		justify-content: center;
+		margin-top: 4px;
+		color: $gray-6;
+		@include semibold-body-1;
+	}
+}
+
+@media only screen and (hover: none) {
+
+	.parameters-container:active {
+		background-color: $gs-4;
+	}
+}
+
+@media only screen and (hover: hover) {
+
+	.parameters-container:hover {
+		background-color: $gs-4;
+	}
+}
+
+.total-balance-container,
+.second-line,
+.first-line,
+.tb-title,
+.balance-wrapper,
+.all-balance,
+.balance-wrapper p,
+.database-container,
+.database-button {
+	display: flex;
+}
+
+.currency,
+.integer {
+	color: $gs-10;
+}
+
+.decimal {
+	color: $gs-8;
+}
+
+.second-line {
+	align-items: center;
+	gap: 8px;
+}
+
+.tb-title {
+	color: $gs-8;
+	@include regular-body-1;
+}
+
+.total-balance-container {
+	flex-direction: column;
+	column-gap: 2px;
+}
+
+.balance-wrapper {
+	gap: 5px;
+	@include bold-title-3;
+}
+
+.all-balance {
+	gap: 4px;
+}
+
+.database-button {
+	height: 28px;
+	width: 28px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 12px;
+	background-color: $base-white;
+
+	svg {
+		max-height: 18px;
+		max-width: 18px;
+	}
+
+	svg path {
+		transition: all .2s ease-in-out;
+	}
+}
+
+@media only screen and (hover: none) {
+	.database-button:active svg path {
+		fill: $gs-9;
+	}
+}
+
+/* стили для телефона */
+@media only screen and (hover: hover) {
+	.database-button:hover svg path {
+		fill: $gs-9;
+	}
+}
+
+.line {
+	width: 100%;
+	height: 1px;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(166, 166, 166, 0.25253851540616246) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.one-line {
+	margin: 24px 0 1rem 0;
+}
+
+.box-title {
+	color: $gs-10;
+	@include bold-header-1;
+	text-align: center;
+}
+
+.box-image {
+	display: flex;
+	max-width: 80px;
+	max-height: 80px;
+	margin: 0 auto;
+	margin-top: 8px;
+}
+
+.swiper-slide-active {
+	max-width: 197px;
+	max-height: 186px;
+
+	p {
+		@include bold-title-2;
+	}
+
+	img {
+		max-width: 120px;
+		width: 100%;
+		height: 100%;
+		max-height: 120px;
+	}
+}
+
+.swiper-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.swiper-slide.swiper-slide-prev,
+.swiper-slide.swiper-slide-next {
+	opacity: 0.4;
+}
+
+img {
+	transition: all .4s ease-in-out;
+}
+
+.boxes-carousel {
+	height: 186px;
+}
+
+.open-box {
+	background-color: $success-1;
+	border-bottom: $success-2 solid 3px;
+	color: $gs-0;
+	@include bold-header-1;
+	width: 197px;
+	position: relative;
+	height: 45px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	display: flex;
+	margin: 0 auto;
+	bottom: 24px;
+	z-index: 100;
+	transition: all .1s ease-in-out;
+
+	&:active {
+		background-color: $success-2;
+		border-bottom: none;
+		height: 45px;
+		align-items: center;
+		display: flex;
+	}
+
+	&:hover img {
+		transform: rotate(270deg);
+	}
+}
+
+.open-box-image {
+	max-width: 24px;
+	max-height: 24px;
+	margin-right: 6px;
+}
+
+.two-line {
+	margin-top: 14px;
+	margin-bottom: 12px;
+}
+
+.three-line {
+	margin-top: 12px;
+	margin-bottom: 1rem;
+}
+
+.last-opens-text {
+	color: $gs-8;
+	@include regular-body-1;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	transition: all .2s ease-out;
+
+	mark {
+		color: $gs-10;
+		background: transparent;
+	}
+
+	img {
+		max-width: 1rem;
+		max-height: 1rem;
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media only screen and (hover: none) {
+	.last-opens-text:active {
+		color: $gs-7;
+	}
+}
+
+/* стили для телефона */
+@media only screen and (hover: hover) {
+	.last-opens-text:hover {
+		color: $gs-7;
+		cursor: pointer;
+	}
+}
+
+.last-opens-text:hover img {
+	box-shadow: 0px 0px 16px -3px rgba(14, 150, 255, 0.3);
+}
+
+.active-quests-and-boxes {
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+	padding-bottom: 55px;
+}
+
+.title-quests {
+	color: $gray-6;
+	@include bold-title-3;
+}
+
+.quest-container {
+	background-color: $gs-2;
+	border-radius: 20px;
+	width: 100%;
+	padding: 12px;
+	max-width: 361px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		background-color: $gs-1;
+	}
+}
+
+.quest-container:hover .title-quest {
+	color: $gs-10;
+}
+
+.quest-container:hover .condition-text {
+	color: $gs-7;
+}
+
+.quest-container:hover .box-quest-image {
+	animation: jump 1.4s infinite;
+}
+
+
+@keyframes jump {
+
+	0%,
+	20%,
+	50%,
+	70%,
+	100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-6px);
+	}
+
+	60% {
+		transform: translateY(-5px);
+	}
+
+	80% {
+		transform: translateY(-2px);
+	}
+}
+
+
+.inner-wrapper-quest {
+	display: flex;
+	gap: 12px;
+	position: relative;
+}
+
+.quest-title-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 4px;
+}
+
+.quest-title {
+	display: inline-flex;
+	color: $gs-10;
+	@include bold-header-1;
+}
+
+.condition-text {
+	display: flex;
+	max-width: 190px;
+	color: $gs-8;
+	@include regular-body-1;
+}
+
+.progress-bar {
+	border-radius: 1rem;
+	max-height: 28px;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: auto;
+	transition: .3s ease-in-out;
+	border-radius: 1rem;
+	background-color: $gs-10;
+
+	span {
+		padding: 4px 8px;
+		display: flex;
+		@include semibold-body-1;
+		align-items: center;
+
+		svg {
+			display: flex;
+			align-items: center;
+			margin-right: 4px;
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+
+	&:hover {
+		background-color: $base-white;
+		cursor: pointer;
+		-webkit-box-shadow: 0px 0px 20px -2px rgba(255, 255, 255, 0.7);
+		-moz-box-shadow: 0px 0px 20px -2px rgba(255, 255, 255, 0.7);
+		box-shadow: 0px 0px 20px -2px rgba(255, 255, 255, 0.7);
+	}
+}
+
+.progress-have {
+	color: $gs-0;
+}
+
+.progress-total {
+	color: $gs-7;
+}
+
+.success:hover {
+	-webkit-box-shadow: 0px 0px 11px 2px rgba(126, 184, 20, 0.75);
+	-moz-box-shadow: 0px 0px 11px 2px rgba(126, 184, 20, 0.75);
+	box-shadow: 0px 0px 11px 2px rgba(126, 184, 20, 0.75);
+}
+
+.open-for-free-button {
+	display: block;
+	width: 100%;
+	height: 43px;
+	background-color: $success-1;
+	border-bottom: $success-2 solid 3px;
+	transition: all .1s ease-in-out;
+	border-radius: 100px;
+	margin-top: 12px;
+
+	p {
+		@include bold-header-1;
+		color: $gs-0;
+		display: inline-block;
+		margin: 0 auto;
+		align-items: center;
+	}
+
+	&:active {
+		height: 43px;
+		border-bottom: none;
+		background-color: $success-2;
+	}
+}

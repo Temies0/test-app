@@ -1,0 +1,51 @@
+@import '../../themes/dark-theme.scss';
+
+@media only screen and (hover: none) {
+	.copy {
+		transition: all .2s ease-out;
+		&:active {
+			background-color: $primary-light-3;
+		}
+	}
+}
+
+.copy:disabled svg path, .copy:disabled svg rect {
+	fill: $gs-7;
+}
+
+.copy {
+	border-radius: 24px;
+}
+
+.button-copy:active svg path, .button-copy:active svg rect,
+.button-copy:hover svg path, .button-copy:hover svg rect {
+	fill: $gs-1;
+}
+
+.button-copy svg path, .button-copy svg rect {
+	transition: all .19s ease-out;
+}
+
+@media only screen and (hover: hover) {
+	.copy {
+		transition: all .2s ease-out;
+		&:hover {
+			background-color: $primary-light-3;
+		}
+	}
+}
+
+.container-copy {
+	display: flex;
+	min-width: 36px;
+	position: relative;
+}
+
+.button-copy {
+	min-width: 36px;
+	max-height: 36px;
+	display: flex;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}

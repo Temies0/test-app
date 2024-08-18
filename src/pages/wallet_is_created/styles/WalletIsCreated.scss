@@ -1,0 +1,156 @@
+@import '../../../globals/themes/dark-theme';
+@import '../../../globals/fonts/fonts';
+
+.wrapper-info {
+	padding-top: 110px;
+}
+
+.done-image {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+}
+
+.title-done {
+	display: flex;
+	flex-direction: column;
+	row-gap: 4px;
+	padding-top: 12px;
+
+	h1 {
+		display: flex;
+		justify-content: center;
+		@include bold-title-2;
+		color: $gs-10;
+		text-align: center;
+	}
+
+	h2 {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		@include regular-body-1;
+		color: $gs-9;
+	}
+}
+
+
+
+.wrapper-form {
+	max-width: 361px;
+	margin: 0 auto;
+	padding-top: 2rem;
+	display: flex;
+	padding-bottom: 78px;
+	flex-direction: column;
+	row-gap: 1rem;
+}
+
+.adress__wallet-adress {
+	background-color: $primary-light-1;
+	border-radius: 12px;
+	display: flex;
+	max-height: 48px;
+}
+
+.adress__inner-wrapper {
+	padding: 5px 6px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 361px;
+	width: 100%;
+}
+
+.adress__copy {
+	display: flex;
+	align-items: center;
+	min-width: 36px;
+}
+
+.adress__adress-wrapper {
+	padding: 0 6px;
+	display: flex;
+	flex-direction: column;
+}
+
+label.adress__adress-label {
+	color: $gs-5;
+	@include regular-caption-1;
+}
+
+p.adress__adress-name {
+	color: $gs-0;
+	@include regular-body-1;
+}
+
+
+
+.secret-key__wallet-secret-key {
+	background-color: $primary-light-1;
+	border-radius: 12px;
+	display: flex;
+}
+
+.secret-key__inner-wrapper {
+	padding: 5px 6px;
+	display: flex;
+	justify-content: space-between;
+	max-width: 361px;
+	width: 100%;
+}
+
+.secret-key__secret-key-wrapper {
+	padding: 0 6px;
+	display: flex;
+	flex-direction: column;
+}
+
+label.secret-key__secret-key-label {
+	color: $gs-5;
+	@include regular-caption-1;
+}
+
+p.secret-key__secret-key-name {
+	max-width: 301px;
+	color: $gs-10;
+	filter: blur(2.5px);
+	@include regular-body-1;
+	max-width: 305px;
+	word-wrap: break-word;
+}
+
+
+button.start {
+	max-width: 361px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	height: 47px;
+	border-bottom: $success-2 solid 3px;
+	background-color: $success-1;
+	border-radius: 100px;
+	transition: all .1s ease-in-out;
+
+	&:active {
+		background-color: $success-2;
+		border-bottom: none;
+		height: 47px;
+	}
+
+	p {
+		color: $gs-0;
+		@include bold-header-1;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		height: 100%;
+	}
+}
+
+body {
+	padding: 0 1rem;
+}
+
+.container {
+	padding-top: 0;
+}
