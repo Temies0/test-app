@@ -3,6 +3,7 @@ import Notcoin from '../../globals/images/base/notcoin.svg'
 import Ton from '../../globals/images/base/ton.svg'
 import Tether from '../../globals/images/base/usdt_ton.svg'
 // import LoadingPage from '../loading/LoadingPage'
+import { Link } from 'react-router-dom'
 import './styles/CreateWallet.scss'
 
 const CreateWalletPage = () => {
@@ -30,16 +31,16 @@ const CreateWalletPage = () => {
 						</span>
 					</div>
 					<div className='button-container'>
-						<a href='/test-app/loading'>
+						<Link to='/test-app/loading'>
 							<button title='' className='create-wallet'>
 								Create new wallet
 							</button>
-						</a>
-						<a href='/test-app/loading'>
+						</Link>
+						<Link to='/test-app/loading'>
 							<button title='' className='log-in'>
 								Log in
 							</button>
-						</a>
+						</Link>
 					</div>
 				</section>
 			</div>

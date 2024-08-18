@@ -6,7 +6,7 @@ import './globals/styles/reset.css'
 // import RoutesConfig from './RoutesConfig'
 /// pages
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Route, Routes } from 'react-router-dom'
+import { Route, HashRouter as Routes } from 'react-router-dom'
 import CreateWalletPage from './pages/first_entry/CreateWalletPage'
 import LoadingPage from './pages/loading/LoadingPage'
 import LogInPage from './pages/log_in/LogInPage'
