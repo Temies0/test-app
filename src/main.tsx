@@ -21,23 +21,23 @@ const router = createBrowserRouter([
 		children: [
 			{
 				path: '/test-app/',
-				element: <CreateWalletPage key='createWallet' />,
+				element: <CreateWalletPage key={Date.now()} />,
 			},
 			{
 				path: '/test-app/created',
-				element: <WalletIsCreatedPage key='walletCreated' />,
+				element: <WalletIsCreatedPage key={Date.now()} />,
 			},
 			{
 				path: '/test-app/login',
-				element: <LogInPage key='login' />,
+				element: <LogInPage key={Date.now()} />,
 			},
 			{
 				path: '/test-app/main',
-				element: <MainPage key='main' />,
+				element: <MainPage key={Date.now()} />,
 			},
 			{
 				path: '/test-app/loading',
-				element: <LoadingPage key='loading' />,
+				element: <LoadingPage key={Date.now()} />,
 			},
 		],
 	},
