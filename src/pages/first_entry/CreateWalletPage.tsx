@@ -10,7 +10,7 @@ const CreateWalletPage = () => {
 	return (
 		<>
 			<Routes>
-				<Route path='/test-app/loading' element={<LoadingPage />} />
+				<Route path='loading' element={<LoadingPage />} />
 			</Routes>
 			<div className='container-create'>
 				<section className='main-wrapper'>
@@ -35,7 +35,7 @@ const CreateWalletPage = () => {
 								Create new wallet
 							</button>
 						</a>
-						<a href='/test-app/loading'>
+						<a href='/loading'>
 							<button title='' className='log-in'>
 								Log in
 							</button>
