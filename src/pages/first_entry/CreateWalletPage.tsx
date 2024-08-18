@@ -30,12 +30,12 @@ const CreateWalletPage = () => {
 						</span>
 					</div>
 					<div className='button-container'>
-						<a href='test-app/loading'>
+						<a href='/test-app/loading'>
 							<button title='' className='create-wallet'>
 								Create new wallet
 							</button>
 						</a>
-						<a href='test-app/loading'>
+						<a href='/test-app/loading'>
 							<button title='' className='log-in'>
 								Log in
 							</button>
