@@ -1,8 +1,7 @@
 import { generate } from 'random-words'
-import { Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import ButtonCopy from '../../globals/components/ui/ButtonCopy'
 import Done from '../../globals/images/base/done.svg'
-import LogInPage from '../log_in/LogInPage'
 import './styles/WalletIsCreated.scss'
 
 const generateWalletAddress = (): string => {
@@ -30,10 +29,6 @@ const key = String(generate(24))
 const WalletIsCreatedPage = () => {
 	return (
 		<>
-			<Routes>
-				<Route path='/login' element={<LogInPage />} />
-			</Routes>
-
 			<div className='container'>
 				<div className='wrapper-info'>
 					<div className='done-image'>
@@ -76,11 +71,11 @@ const WalletIsCreatedPage = () => {
 						</div>
 					</form>
 				</div>
-				<a href='/login'>
+				<Link to='/test-app/login'>
 					<button className='start'>
 						<p>Let’s goo</p>
 					</button>
-				</a>
+				</Link>
 			</div>
 		</>
 	)
