@@ -6,7 +6,7 @@ import './globals/styles/reset.css'
 // import RoutesConfig from './RoutesConfig'
 /// pages
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Route, Router, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import CreateWalletPage from './pages/first_entry/CreateWalletPage'
 import LoadingPage from './pages/loading/LoadingPage'
 import LogInPage from './pages/log_in/LogInPage'
@@ -50,14 +50,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 		{/* <CreateWalletPage /> */}
 		{/* <LoadingPage /> */}
 		{/* <WalletIsCreatedPage /> */}
-		<Router>
-			<Routes>
-				<Route path='/test-app/' element={<CreateWalletPage />} />
-				<Route path='/test-app/loading' element={<LoadingPage />} />
-				<Route path='/test-app/created' element={<WalletIsCreatedPage />} />
-				<Route path='/test-app/login' element={<LogInPage />} />
-				<Route path='/test-app/main' element={<MainPage />} />
-			</Routes>
-		</Router>
+		<Routes>
+			<Route path='/test-app/' element={<CreateWalletPage />} />
+			<Route path='/test-app/loading' element={<LoadingPage />} />
+			<Route path='/test-app/created' element={<WalletIsCreatedPage />} />
+			<Route path='/test-app/login' element={<LogInPage />} />
+			<Route path='/test-app/main' element={<MainPage />} />
+		</Routes>
 	</React.StrictMode>
 )
