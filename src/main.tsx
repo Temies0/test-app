@@ -16,8 +16,8 @@ import WalletIsCreatedPage from './pages/wallet_is_created/WalletIsCreatedPage'
 
 const router = createBrowserRouter([
 	{
-		path: '/test-app/',
-		element: <CreateWalletPage />,
+		// path: '/test-app/',
+		// element: <CreateWalletPage />,
 		children: [
 			{
 				path: '/test-app/',
