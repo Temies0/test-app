@@ -1,4 +1,3 @@
-import { Outlet } from 'react-router-dom'
 import Durev from '../../globals/images/base/durev.svg'
 import Notcoin from '../../globals/images/base/notcoin.svg'
 import Ton from '../../globals/images/base/ton.svg'
@@ -9,7 +8,7 @@ import './styles/CreateWallet.scss'
 const CreateWalletPage = () => {
 	return (
 		<>
-			<Outlet />
+			{/* <Outlet /> */}
 			{/* <Routes>
 				<Route path='loading' element={<LoadingPage />} />
 			</Routes> */}
