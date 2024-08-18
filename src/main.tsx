@@ -10,13 +10,13 @@ import RoutesConfig from './RoutesConfig'
 // import LogInPage from './pages/log_in/LogInPage'
 // import MainPage from './pages/main/MainPage'
 // import LoadingPage from './pages/loading/LoadingPage'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<BrowserRouter>
+		<HashRouter>
 			<RoutesConfig />
-		</BrowserRouter>
+		</HashRouter>
 		{/* <LogInPage /> */}
 		{/* <MainPage /> */}
 		{/* <CreateWalletPage /> */}
