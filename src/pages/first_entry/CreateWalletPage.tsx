@@ -1,17 +1,18 @@
-import { Route, Routes } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import Durev from '../../globals/images/base/durev.svg'
 import Notcoin from '../../globals/images/base/notcoin.svg'
 import Ton from '../../globals/images/base/ton.svg'
 import Tether from '../../globals/images/base/usdt_ton.svg'
-import LoadingPage from '../loading/LoadingPage'
+// import LoadingPage from '../loading/LoadingPage'
 import './styles/CreateWallet.scss'
 
 const CreateWalletPage = () => {
 	return (
 		<>
-			<Routes>
+			<Outlet />
+			{/* <Routes>
 				<Route path='loading' element={<LoadingPage />} />
-			</Routes>
+			</Routes> */}
 			<div className='container-create'>
 				<section className='main-wrapper'>
 					<div className='welcome'>
@@ -30,16 +31,16 @@ const CreateWalletPage = () => {
 						</span>
 					</div>
 					<div className='button-container'>
-						<a href='/loading'>
+						<Link to='/test-app/loading'>
 							<button title='' className='create-wallet'>
 								Create new wallet
 							</button>
-						</a>
-						<a href='test-app/loading'>
+						</Link>
+						<Link to='/test-app/loading'>
 							<button title='' className='log-in'>
 								Log in
 							</button>
-						</a>
+						</Link>
 					</div>
 				</section>
 			</div>
