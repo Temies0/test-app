@@ -31,7 +31,7 @@ const WalletIsCreatedPage = () => {
 	return (
 		<>
 			<Routes>
-				<Route path='/login' element={<LogInPage />} />
+				<Route path='/test-app/login' element={<LogInPage />} />
 			</Routes>
 
 			<div className='container'>
@@ -76,7 +76,7 @@ const WalletIsCreatedPage = () => {
 						</div>
 					</form>
 				</div>
-				<a href='/login'>
+				<a href='/test-app/login'>
 					<button className='start'>
 						<p>Let’s goo</p>
 					</button>

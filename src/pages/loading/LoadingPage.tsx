@@ -9,7 +9,7 @@ import './styles/Loading.scss'
 const LoadingPage = () => {
 	useEffect(() => {
 		const redirectTimer = setTimeout(() => {
-			window.location.href = 'http://localhost:5173/created' // Замените ссылку на нужную
+			window.location.href = 'https://temies0.github.io/test-app/created' // Замените ссылку на нужную
 		}, 6000)
 
 		return () => clearTimeout(redirectTimer)

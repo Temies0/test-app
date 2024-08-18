@@ -7,7 +7,7 @@ const LogInPage = () => {
 	return (
 		<>
 			<Routes>
-				<Route path='/main' element={<MainPage />} />
+				<Route path='/test-app/main' element={<MainPage />} />
 			</Routes>
 
 			<div className='container-login'>
@@ -236,7 +236,7 @@ const LogInPage = () => {
 						</div>
 					</form>
 				</div>
-				<a href='/main'>
+				<a href='/test-app/main'>
 					<button className='start'>
 						<p>Let’s goo</p>
 					</button>
