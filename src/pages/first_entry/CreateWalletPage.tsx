@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import Durev from '../../globals/images/base/durev.svg'
 import Notcoin from '../../globals/images/base/notcoin.svg'
 import Ton from '../../globals/images/base/ton.svg'
@@ -31,16 +31,16 @@ const CreateWalletPage = () => {
 						</span>
 					</div>
 					<div className='button-container'>
-						<Link to='/test-app/loading'>
+						<a href='/test-app/loading'>
 							<button title='' className='create-wallet'>
 								Create new wallet
 							</button>
-						</Link>
-						<Link to='/test-app/loading'>
+						</a>
+						<a href='/test-app/loading'>
 							<button title='' className='log-in'>
 								Log in
 							</button>
-						</Link>
+						</a>
 					</div>
 				</section>
 			</div>
