@@ -1,4 +1,10 @@
-const
+// import { Route, Routes } from 'react-router-dom'
+
+// import CreateWalletPage from './pages/first_entry/CreateWalletPage'
+// import LoadingPage from './pages/loading/LoadingPage'
+// import LogInPage from './pages/log_in/LogInPage'
+// import MainPage from './pages/main/MainPage'
+// import WalletIsCreatedPage from './pages/wallet_is_created/WalletIsCreatedPage'
 
 const RoutesConfig = () => {
 	return (
