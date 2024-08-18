@@ -3,20 +3,47 @@ import ReactDOM from 'react-dom/client'
 import './globals/fonts/stylesheet.css'
 import './globals/styles/main.scss'
 import './globals/styles/reset.css'
-import RoutesConfig from './RoutesConfig'
+// import RoutesConfig from './RoutesConfig'
 /// pages
-// import CreateWalletPage from './pages/first_entry/CreateWalletPage'
-// import WalletIsCreatedPage from './pages/wallet_is_created/WalletIsCreatedPage'
-// import LogInPage from './pages/log_in/LogInPage'
-// import MainPage from './pages/main/MainPage'
-// import LoadingPage from './pages/loading/LoadingPage'
-import { HashRouter } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import CreateWalletPage from './pages/first_entry/CreateWalletPage'
+import LoadingPage from './pages/loading/LoadingPage'
+import LogInPage from './pages/log_in/LogInPage'
+import MainPage from './pages/main/MainPage'
+import WalletIsCreatedPage from './pages/wallet_is_created/WalletIsCreatedPage'
+
+const router = createBrowserRouter([
+	{
+		path: '/test-app/',
+		element: <CreateWalletPage />,
+		children: [
+			{
+				path: '/test-app/',
+				element: <CreateWalletPage />,
+			},
+			{
+				path: '/test-app/created',
+				element: <WalletIsCreatedPage />,
+			},
+			{
+				path: '/test-app/login',
+				element: <LogInPage />,
+			},
+			{
+				path: '/test-app/main',
+				element: <MainPage />,
+			},
+			{
+				path: '/test-app/loading',
+				element: <LoadingPage />,
+			},
+		],
+	},
+])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<HashRouter>
-			<RoutesConfig />
-		</HashRouter>
+		<RouterProvider router={router} />
 		{/* <LogInPage /> */}
 		{/* <MainPage /> */}
 		{/* <CreateWalletPage /> */}
