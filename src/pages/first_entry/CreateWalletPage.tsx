@@ -3,13 +3,13 @@ import Notcoin from '../../globals/images/base/notcoin.svg'
 import Ton from '../../globals/images/base/ton.svg'
 import Tether from '../../globals/images/base/usdt_ton.svg'
 // import LoadingPage from '../loading/LoadingPage'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './styles/CreateWallet.scss'
 
 const CreateWalletPage = () => {
 	return (
 		<>
-			<Outlet />
+			{/* <Outlet /> */}
 			{/* <Routes>
 				<Route path='loading' element={<LoadingPage />} />
 			</Routes> */}
