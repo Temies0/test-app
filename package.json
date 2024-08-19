@@ -1,5 +1,6 @@
 {
 	"name": "test-app",
+	"homepage": "https://temies0.github.io/test-app/",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
