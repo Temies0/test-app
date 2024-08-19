@@ -25,7 +25,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/test-app/created',
-				element: <WalletIsCreatedPage key={Date.now()} />,
+				element: <WalletIsCreatedPage />,
 			},
 			{
 				path: '/test-app/login',

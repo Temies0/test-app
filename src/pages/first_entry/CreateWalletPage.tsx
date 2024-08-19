@@ -9,10 +9,6 @@ import './styles/CreateWallet.scss'
 const CreateWalletPage = () => {
 	return (
 		<>
-			{/* <Outlet /> */}
-			{/* <Routes>
-				<Route path='loading' element={<LoadingPage />} />
-			</Routes> */}
 			<div className='container-create'>
 				<section className='main-wrapper'>
 					<div className='welcome'>
