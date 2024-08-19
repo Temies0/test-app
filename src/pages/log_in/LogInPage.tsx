@@ -1,15 +1,11 @@
 // import ArrowBack from '../../globals/components/ui/ArrowBack'
-import { Route, Routes } from 'react-router-dom'
-import MainPage from '../main/MainPage'
+import { Link } from 'react-router-dom'
+// import MainPage from '../main/MainPage'
 import './styles/LogIn.scss'
 
 const LogInPage = () => {
 	return (
 		<>
-			<Routes>
-				<Route path='/main' element={<MainPage />} />
-			</Routes>
-
 			<div className='container-login'>
 				{/* <ArrowBack /> */}
 				<span className='enter-title'>
@@ -236,11 +232,11 @@ const LogInPage = () => {
 						</div>
 					</form>
 				</div>
-				<a href='/main'>
+				<Link to='/test-app/main'>
 					<button className='start'>
 						<p>Let’s goo</p>
 					</button>
-				</a>
+				</Link>
 			</div>
 		</>
 	)
