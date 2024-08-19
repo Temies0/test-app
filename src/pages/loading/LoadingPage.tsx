@@ -5,6 +5,7 @@ import Ton from '../../globals/images/base/ton.svg'
 import Tether from '../../globals/images/base/usdt_ton.svg'
 import './styles/Loading.scss'
 // import WalletIsCreatedPage from '../wallet_is_created/WalletIsCreatedPage'
+import { Link } from 'react-router-dom'
 
 const LoadingPage = () => {
 	useEffect(() => {
@@ -34,6 +35,11 @@ const LoadingPage = () => {
 						<h2>Almost done</h2>
 					</span>
 				</div>
+				<Link to='/test-app/created'>
+					<button title='' className='log-in'>
+						Log in
+					</button>
+				</Link>
 			</div>
 		</>
 	)
